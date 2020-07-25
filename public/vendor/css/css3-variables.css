@@ -1,0 +1,9 @@
+:root {
+  --default-primary: #2380fb;
+  --default-primary-gradient: linear-gradient(120deg,rgba(55, 125, 255, 0.22) 0,rgba(55, 125, 255, 0.24) 100%);;
+  --mg-primary: #f26522;
+  --mg-primary-border: #f15b14;
+  --mg-sleek-primary: #ff8b3824;
+  --mg-primary-gradient: linear-gradient(120deg,rgb(255 139 56 / 14%) 0,rgb(255 139 56 / 16%) 100%);
+  --mg-gradient-half-primary: linear-gradient(0deg, #ba4b15 20%, #f67335 80%);
+}
