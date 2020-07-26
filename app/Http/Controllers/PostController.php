@@ -22,6 +22,22 @@ class PostController extends Controller
         ]);
     }
 
+    public function test(Request $request): View
+    {
+        return view('posts.test', [
+            'posts' => Post::search($request->input('q'))
+                             ->with('author', 'likes')
+                             ->withCount('comments', 'thumbnail', 'likes')
+                             ->latest()
+                             ->paginate(20)
+        ]);
+    }
+
+    public function hello(Request $request): View
+    {
+        return view('posts.hello');
+    }
+
     /**
      * Display the specified resource.
      */
@@ -34,4 +50,5 @@ class PostController extends Controller
             'post' => $post
         ]);
     }
+    
 }
