@@ -33,6 +33,11 @@ class PostController extends Controller
         ]);
     }
 
+    public function hello(Request $request): View
+    {
+        return view('posts.hello');
+    }
+
     /**
      * Display the specified resource.
      */
@@ -45,4 +50,5 @@ class PostController extends Controller
             'post' => $post
         ]);
     }
+    
 }

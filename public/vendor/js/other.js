@@ -71,13 +71,13 @@ $.SVGIngector.init('.js-svg-injector');
 
 if (typeof SVGInjector != "undefined") {
     SVGInjector(document.querySelectorAll('[data-inject-svg]'), {
-        afterEach: function afterEach(err, svg) {
-            if (typeof jarallax === 'function') {
-                svg.dispatchEvent(new CustomEvent('injected.mr.SVGInjector', {
-                    bubbles: true
-                }));
-            }
-        }
+			afterEach: function afterEach(err, svg) {
+				if (typeof jarallax === 'function') {
+					svg.dispatchEvent(new CustomEvent('injected.mr.SVGInjector', {
+						bubbles: true
+					}));
+				}
+			}
     });
 }
 

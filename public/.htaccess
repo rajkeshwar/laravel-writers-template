@@ -5,6 +5,15 @@
 
     RewriteEngine On
 
+    # FONTS
+	AddType font/opentype otf
+	AddType application/font-woff woff
+	AddType application/x-font-woff woff
+	AddType application/vnd.ms-fontobject eot
+	AddType application/x-font-ttf ttc ttf
+	AddType image/svg+xml svg svgz
+	AddEncoding gzip svgz
+    
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

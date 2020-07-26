@@ -15,7 +15,7 @@
             {!! Form::text('name', null, ['class' => 'form-control' . ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => __('users.placeholder.name'), 'required']) !!}
 
             @error('name')
-                <span class="invalid-feedback">{{ $message }}</span>
+              <span class="invalid-feedback">{{ $message }}</span>
             @enderror
           </div>
         </div>

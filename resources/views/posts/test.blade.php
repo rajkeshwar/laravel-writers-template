@@ -39,18 +39,18 @@
 </head>
 <body>
     <div class="wrapper" id="app">
-        <!--Header-->
-        <header id="header" class="header-effect-reveal" 
-    data-plugin-options="{
-        'stickyEnabled': true, 
-        'stickyEffect': 'reveal', 
-        'stickyEnableOnBoxed': true, 
-        'stickyEnableOnMobile': true, 
-        'stickyChangeLogo': true, 
-        'stickyStartAt': 100, 
-        'stickySetTop': '-35px'
-    }"
->
+      <!--Header-->
+      <header id="header" class="header-effect-reveal" 
+        data-plugin-options="{
+          'stickyEnabled': true, 
+          'stickyEffect': 'reveal', 
+          'stickyEnableOnBoxed': true, 
+          'stickyEnableOnMobile': true, 
+          'stickyChangeLogo': true, 
+          'stickyStartAt': 100, 
+          'stickySetTop': '-35px'
+        }"
+    >
   <div class="header-body">
       <div class="header-container container">
           <div class="header-row">
